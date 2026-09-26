@@ -1,0 +1,395 @@
+/* ==========================================================
+   CreatorOS AI
+   Premium Dark Theme
+========================================================== */
+
+/* ------------------------------
+   Google Font
+------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ------------------------------
+   Global
+------------------------------ */
+
+html,
+body,
+[class*="css"]{
+    font-family: "Inter", sans-serif;
+}
+
+.stApp{
+
+    background:
+    radial-gradient(circle at top,#1E3A8A15 0%,transparent 40%),
+    linear-gradient(
+        135deg,
+        #0B1220 0%,
+        #0F172A 50%,
+        #111827 100%
+    );
+
+    color:#F8FAFC;
+
+}
+
+/* Hide Streamlit Elements */
+
+header,
+footer,
+#MainMenu{
+
+    visibility:hidden;
+
+}
+
+[data-testid="stToolbar"]{
+
+    display:none;
+
+}
+
+/* ------------------------------
+   Main Layout
+------------------------------ */
+
+.block-container{
+    max-width:1150px;
+    padding-top:0.8rem;
+    padding-bottom:2rem;
+}
+
+/* ------------------------------
+   Headings
+------------------------------ */
+
+h1{
+
+    text-align:center;
+
+    font-size:3.4rem !important;
+
+    font-weight:900 !important;
+
+    background:
+    linear-gradient(
+        90deg,
+        #60A5FA,
+        #8B5CF6,
+        #EC4899
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    margin-bottom:15px;
+
+}
+
+h2{
+
+    color:white;
+
+    font-weight:700;
+
+}
+
+h3{
+
+    color:#CBD5E1;
+
+}
+
+p{
+
+    color:#CBD5E1;
+
+    line-height:1.8;
+
+}
+
+/* ------------------------------
+   Divider
+------------------------------ */
+
+hr{
+
+    border:none;
+
+    height:1px;
+
+    background:#334155;
+
+    margin:35px 0;
+
+}
+
+/* ------------------------------
+   Labels
+------------------------------ */
+
+label{
+
+    font-size:16px !important;
+
+    font-weight:600 !important;
+
+    color:#E2E8F0 !important;
+
+}
+
+/* ------------------------------
+   Text Input
+------------------------------ */
+
+.stTextInput input{
+
+    background:#1E293B !important;
+
+    color:white !important;
+
+    border:1px solid #334155 !important;
+
+    border-radius:16px !important;
+
+    padding:15px !important;
+
+    transition:.3s;
+
+}
+
+.stTextInput input:focus{
+
+    border:1px solid #3B82F6 !important;
+
+    box-shadow:
+    0 0 20px rgba(59,130,246,.35);
+
+}
+
+/* ------------------------------
+   Text Area
+------------------------------ */
+
+.stTextArea textarea{
+
+    background:#1E293B !important;
+
+    color:white !important;
+
+    border:1px solid #334155 !important;
+
+    border-radius:16px !important;
+
+    padding:15px !important;
+
+    transition:.3s;
+
+}
+
+.stTextArea textarea:focus{
+
+    border:1px solid #3B82F6 !important;
+
+    box-shadow:
+    0 0 20px rgba(59,130,246,.35);
+
+}
+
+/* ------------------------------
+   Select Box
+------------------------------ */
+
+.stSelectbox div[data-baseweb="select"]{
+
+    background:#1E293B;
+
+    border:1px solid #334155;
+
+    border-radius:16px;
+
+}
+
+/* ------------------------------
+   Buttons
+------------------------------ */
+
+.stButton button{
+
+    width:100%;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:16px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:white;
+
+    letter-spacing:.3px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #2563EB,
+        #7C3AED
+    );
+
+    transition:all .25s ease;
+
+}
+
+.stButton button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 10px 35px rgba(37,99,235,.25),
+
+    0 10px 35px rgba(124,58,237,.35);
+
+}
+
+/* ------------------------------
+   Download Button
+------------------------------ */
+
+.stDownloadButton button{
+
+    width:100%;
+
+    border-radius:14px;
+
+    background:#1E293B;
+
+    color:white;
+
+    border:1px solid #334155;
+
+}
+
+.stDownloadButton button:hover{
+
+    border-color:#3B82F6;
+
+}
+
+/* ------------------------------
+   Card
+------------------------------ */
+
+.card{
+
+    background:rgba(30,41,59,.75);
+
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:28px;
+
+    margin-top:25px;
+
+    margin-bottom:25px;
+
+    box-shadow:
+
+    0 10px 40px rgba(0,0,0,.25);
+
+}
+
+/* ------------------------------
+   Success
+------------------------------ */
+
+.stSuccess{
+
+    border-radius:16px;
+
+}
+
+/* ------------------------------
+   Warning
+------------------------------ */
+
+.stWarning{
+
+    border-radius:16px;
+
+}
+
+/* ------------------------------
+   Code
+------------------------------ */
+
+pre{
+
+    border-radius:16px !important;
+
+}
+
+/* ------------------------------
+   Markdown Output
+------------------------------ */
+
+[data-testid="stMarkdownContainer"]{
+
+    line-height:1.8;
+
+}
+
+/* ------------------------------
+   Scrollbar
+------------------------------ */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111827;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#374151;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#60A5FA;
+
+}
+
+/* ------------------------------
+   Animations
+------------------------------ */
+
+*{
+
+    transition:
+
+    background .25s,
+
+    color .25s,
+
+    border .25s,
+
+    box-shadow .25s;
+
+}

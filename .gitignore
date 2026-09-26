@@ -1,0 +1,29 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+
+# Secrets / local environment
+.env
+.env.*
+!.env.example
+
+# Local databases
+*.sqlite3
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Legacy / experimental files
+flask_app.py
+main.py
+test.py
+utilities/
