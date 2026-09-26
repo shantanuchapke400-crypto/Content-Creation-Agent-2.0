@@ -24,6 +24,5 @@ wheels/
 
 # Legacy / experimental files
 flask_app.py
-main.py
 test.py
 utilities/
